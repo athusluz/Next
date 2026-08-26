@@ -6,32 +6,30 @@
     
     <title>Next</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Next">
-    <meta name="theme-color" content="#0f0f14">
     
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/athusluz/M1thos/refs/heads/main/icone.png">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/athusluz/M1thos/refs/heads/main/icone.png">
 
     <style>
         body, html {
-            position: fixed;
-            inset: 0;
             margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh; 
             overflow: hidden;
-            background-color: #0f0f14; 
+            background-color: #FFFFFF; 
         }
         .iframe-container {
-            position: fixed;
-            top: 0;
+            position: absolute;
+            top: max(0px);
             left: env(safe-area-inset-left);
             right: env(safe-area-inset-right);
             bottom: 0;
         }
         iframe {
-            position: absolute;
-            inset: 0;
             width: 100%;
             height: 100%;
             border: none;
